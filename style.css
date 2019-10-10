@@ -1,0 +1,44 @@
+html,body,div{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.cardCon{
+	position: relative;
+	margin-top: 50px;
+}
+.cardCon .card{
+	width: 90%;
+	position: absolute;
+	left: 5%;
+  height: 477px;
+  overflow: hidden;
+}
+.card img{
+	width: 100%;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+}
+.part {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#5f44f1, #6031e8, #6031e8);
+  border-radius: 50%;
+  animation: scale 1000ms infinite ease-in-out alternate;
+  animation-delay: -500ms;
+  transform: scale(0.5);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<link rel="stylesheet" href="./style.css">
+	<title>CardTransformDemo</title>
+</head>
+<body>
+	<div class="wrap">
+		<header class="head">
+			<div class="anim"></div>
+		</header>
+		<div class="part" id="part3"></div>
+		<div class="cardCon" id="cardCon">
+			<div class="card"><img src="./images/avatar.jpg"></div>
+			<div class="card"><img src="./images/avatar1.jpg"></div>
+			<div class="card"><img src="./images/avatar2.jpg"></div>
+			<div class="card"><img src="./images/avatar3.jpg"></div>
+			<div class="card"><img src="./images/avatar4.jpg"></div>
+		</div>
+		<div class="cardDot"></div>
+	</div>
+	<script src="./cardAnimate.js"></script>
+	<script>
+		window.onload = function () {
+			cardAnimate.init("cardCon", "cardDot");
+		}
+		let arr = [
+			{
+				name: 'sform属性应用于元素的2D或3D转换。这个属性允许你将元素旋转,缩放,移动,倾斜等。'
+			},
+			{
+				name: 1
+			},
+			{
+				name: 1
+			}
+		]
+		arr.map(item => {
+			return item.name = item.name.toString().split('D').join('<br>')
+			// return 
+		})
+		console.log(arr)
+	</script>
+</body>
+</html>
